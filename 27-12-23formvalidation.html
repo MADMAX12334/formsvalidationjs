@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="" action="https://www.youtube.com/" method="post" name="myforms" onsubmit="return validateform()">
+        Enter name: <input type="text" name="mname" value=""><br><br>
+        Enter password: <input type="password" name="mpass" value=""><br><br>
+        <input type="submit" name="" value="submit"><br>
+    </form>
+    <script>
+        function validateform(){
+            var uname=document.forms["myforms"]["mname"].value;
+            var upass=document.forms["myforms"]["mpass"].value;
+            if(uname=="santhosh" && upass=="santhu"){
+            
+
+            }
+            else{
+            alert("enter valid user name and password");
+            return false
+
+
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>
